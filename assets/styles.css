@@ -13,14 +13,61 @@ h1 {
   margin: 0;
 }
 
+/* Estilizando os membros */
+.membros {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.membro {
+  position: relative; /* Necessário para o posicionamento absoluto do menu-social */
+  cursor: pointer;
+  text-align: center; /* Centraliza o conteúdo dentro do membro */
+  transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.membro:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.membro:hover .menu-social {
+  display: block;
+}
+
+/* Estilizando o menu-social */
+.menu-social {
+  display: none;
+  position: absolute;
+  top: 100%; /* Para alinhar abaixo do elemento pai */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  background-color: #000; /* Cor de fundo preta */
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.menu-social a {
+  display: block; /* Exibe um link abaixo do outro */
+  color: #fff; /* Cor do texto branca */
+  text-decoration: none; /* Remove o sublinhado */
+  padding: 10px;
+  margin: 5px 0; /* Espaçamento entre os links */
+  transition: background-color 0.3s ease; /* Animação de cor de fundo */
+}
+
+.menu-social a:hover {
+  background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilizando a foto do perfil */
 .profile-photo {
   display: block;
   margin: 1rem auto;
   border-radius: 50%;
-  width: 150px;
-  /* Ajuste o tamanho da foto conforme necessário */
+  width: 150px; /* Ajuste o tamanho da foto conforme necessário */
   height: 150px;
-
   object-fit: cover;
 }
 
@@ -64,50 +111,4 @@ h1 {
 
 .btn:hover {
   background-color: #0056b3;
-}
-/* Estilizando os membros */
-.membros {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0;
-}
-
-.membro {
-  position: relative; /* Necessário para o posicionamento absoluto do menu-social */
-  cursor: pointer;
-  transition: transform 0.3s ease; /* Animação ao passar o mouse */
-}
-
-.membro:hover {
-  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-}
-
-.membro:hover .menu-social {
-  display: block;
-}
-
-/* Estilizando o menu-social */
-.menu-social {
-  display: none;
-  position: absolute;
-  top: 100%; /* Para alinhar abaixo do elemento pai */
-  left: 50%;
-  transform: translateX(-50%); /* Centraliza horizontalmente */
-  background-color: #000; /* Cor de fundo preta */
-  padding: 10px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.menu-social a {
-  display: block; /* Exibe um link abaixo do outro */
-  color: #fff; /* Cor do texto branca */
-  text-decoration: none; /* Remove o sublinhado */
-  padding: 10px;
-  margin: 5px 0; /* Espaçamento entre os links */
-  transition: background-color 0.3s ease; /* Animação de cor de fundo */
-}
-
-.menu-social a:hover {
-  background-color: #555; /* Cor de fundo ao passar o mouse */
 }
