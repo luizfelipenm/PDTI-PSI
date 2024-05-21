@@ -36,8 +36,8 @@ h1 {
 .pdf-viewer {
   width: 65%;
   background-color: #e6e6e6;
-  padding: 200px;
-  height: 6000px; /* Ajuste conforme necessário */
+  padding: 20px;
+  height: 600px; /* Ajuste conforme necessário */
 }
 
 .btn {
