@@ -13,6 +13,17 @@ h1 {
   margin: 0;
 }
 
+.profile-photo {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 50%;
+  width: 150px;
+  /* Ajuste o tamanho da foto conforme necessário */
+  height: 150px;
+
+  object-fit: cover;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
