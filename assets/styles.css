@@ -42,7 +42,7 @@ h1 {
   top: 100%; /* Para alinhar abaixo do elemento pai */
   left: 50%;
   transform: translateX(-50%); /* Centraliza horizontalmente */
-  background-color: #000; /* Cor de fundo preta */
+  background-color: #333; /* Cor de fundo preta */
   padding: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -58,7 +58,7 @@ h1 {
 }
 
 .menu-social a:hover {
-  background-color: #555; /* Cor de fundo ao passar o mouse */
+  background-color: #000; /* Cor de fundo ao passar o mouse */
 }
 
 /* Estilizando a foto do perfil */
