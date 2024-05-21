@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LLDM</title>
-<style>
-  body { font-family: Arial, sans-serif; }
-  .logo { text-align: center; margin: 20px; }
-  .membros { display: flex; justify-content: space-around; margin: 20px 0; }
-  .membro { cursor: pointer; }
-  .membro:hover .menu-social { display: block; }
-  .menu-social { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); padding: 12px 16px; z-index: 1; }
-  .objetivo { margin: 20px; }
-  .arquivos { margin: 20px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLDM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffdb58; /* Mustard yellow background */
+      color: #ff0000; /* Red text color */
+    }
+    .logo {
+      text-align: center;
+      margin: 20px;
+    }
+    .membros {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+    .membro {
+      cursor: pointer;
+      position: relative;
+    }
+    .membro:hover .menu-social {
+      display: block;
+    }
+    .menu-social {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+      z-index: 1;
+    }
+    .objetivo {
+      margin: 20px;
+    }
+    .arquivos {
+      margin: 20px;
+    }
+    .pdf-viewer {
+      /* Add styling for the PDF viewer area */
+      border: 2px solid #ff0000; /* Red border */
+      padding: 10px;
+      background-color: #ffffff; /* White background */
+    }
+  </style>
 </head>
 <body>
 
@@ -28,47 +62,20 @@
 </div>
 
 <div class="membros">
-  <div class="membro" id="luiz-felipe">Luiz Felipe
-    <div class="menu-social">
-      <!-- Adicione os links das redes sociais aqui -->
-      <a href="#">Facebook</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Email</a>
-    </div>
-  </div>
-  <div class="membro" id="luiz-otavio">Luiz Otávio
-    <div class="menu-social">
-      <!-- Adicione os links das redes sociais aqui -->
-      <a href="#">Facebook</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Email</a>
-    </div>
-  </div>
-  <div class="membro" id="diego">Diego
-    <div class="menu-social">
-      <!-- Adicione os links das redes sociais aqui -->
-      <a href="#">Facebook</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Email</a>
-    </div>
-  </div>
-  <div class="membro" id="marcus">Marcus
-    <div class="menu-social">
-      <!-- Adicione os links das redes sociais aqui -->
-      <a href="#">Facebook</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Email</a>
-    </div>
-  </div>
+  <!-- Add member details here -->
 </div>
 
 <div class="arquivos">
   <h2>Arquivos</h2>
-  <!-- Liste os arquivos aqui -->
+  <!-- List the files here -->
   <a href="caminho_para_arquivo.pdf" target="_blank">PDTI Pirelli</a>
   <a href="caminho_para_arquivo.pdf" target="_blank">PSI Pirelli</a>
 </div>
 
+<div class="pdf-viewer">
+  <!-- Add PDF viewer area here -->
+  <!-- You can embed a PDF viewer or provide instructions for users to view the PDF -->
+</div>
+
 </body>
 </html>
-
