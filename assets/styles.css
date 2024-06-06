@@ -23,7 +23,9 @@ h1 {
 .membro {
   position: relative; /* Necessário para o posicionamento absoluto do menu-social */
   cursor: pointer;
-  text-align: center; /* Centraliza o conteúdo dentro do membro */
+  display: flex; /* Exibir foto e nome lado a lado */
+  align-items: center; /* Alinhar verticalmente */
+  gap: 10px; /* Espaço entre foto e nome */
   transition: transform 0.3s ease; /* Animação ao passar o mouse */
 }
 
@@ -66,8 +68,8 @@ h1 {
   display: block;
   margin: 1rem auto;
   border-radius: 50%;
-  width: 150px; /* Ajuste o tamanho da foto conforme necessário */
-  height: 150px;
+  width: 80px; /* Ajuste o tamanho da foto conforme necessário */
+  height: 80px;
   object-fit: cover;
 }
 
