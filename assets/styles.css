@@ -29,12 +29,6 @@ h1 {
   transition: transform 0.3s ease; /* Animação ao passar o mouse */
 }
 
-.nome {
-  flex: 1; /* Faz com que o nome ocupe o espaço restante */
-  text-align: left; /* Alinha o texto à esquerda */
-}
-
-
 .membro:hover {
   transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
