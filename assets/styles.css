@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -23,7 +23,7 @@ h1 {
 .membro {
   position: relative; /* Necessário para o posicionamento absoluto do menu-social */
   cursor: pointer;
-  text-align: right; /* Centraliza o conteúdo dentro do membro */
+  text-align: center; /* Centraliza o conteúdo dentro do membro */
   transition: transform 0.3s ease; /* Animação ao passar o mouse */
 }
 
