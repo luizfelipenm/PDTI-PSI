@@ -10,7 +10,7 @@ header {
 }
 
 h1 {
-  margin: 100;
+  margin: 0;
 }
 
 /* Estilizando os membros */
@@ -23,7 +23,7 @@ h1 {
 .membro {
   position: relative; /* Necessário para o posicionamento absoluto do menu-social */
   cursor: pointer;
-  text-align: center; /* Centraliza o conteúdo dentro do membro */
+  text-align: right; /* Centraliza o conteúdo dentro do membro */
   transition: transform 0.3s ease; /* Animação ao passar o mouse */
 }
 
