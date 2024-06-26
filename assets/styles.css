@@ -85,8 +85,12 @@ h1 {
 
 .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
   padding: 20px;
+  min-height: 100vh;
 
   /* Centralizar o contéudo da página */
   margin: 0 auto;
@@ -98,6 +102,8 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 80%;
+  max-width: 600px;
   flex: .5;
 }
 
@@ -159,6 +165,10 @@ h1 {
   height: 600px;
  }
   
+ .sidebar {
+  width: 100%;
+ }
+
 }
 
 /* Tablets */
